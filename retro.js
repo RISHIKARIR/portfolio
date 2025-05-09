@@ -7,14 +7,18 @@ let body = document.querySelector("body");
 let projects = document.querySelector("#projects1");
 let education = document.querySelector("#education1");
 let contact = document.querySelector("#contact1")
+let submit = document.querySelector("#submit1");
+let input1 = document.querySelector("#formname");
+let input2 = document.querySelector("#formmail");
+let input3= document.querySelector("#formmessage");
+
 
 
 about.addEventListener("click", () => {
   menu.classList.toggle("active");
   main.classList.toggle("main");
-  // body.classList.toggle("hide");
+  body.classList.toggle("hidden");
  
-
 });
 
 skills.addEventListener("click",function(){
@@ -58,6 +62,15 @@ contact.addEventListener("click",function(){
 
 
 
+
+submit.addEventListener("click",function(){
+
+  setTimeout(()=>{
+  input1.value = "";
+  input2.value ="";
+  input3.value ="";
+},3000)
+})
 
 
 
