@@ -701,110 +701,75 @@ border-radius: 20%;
 color: black;
 border-radius: 5px;   
 
-
-/* Small devices (phones, less than 768px) */
-@media only screen and (max-width: 768px) {
-  #intro, #skills h1, #projects h1, #spotify-heading, #simon-heading, #portfolio-heading, #Education-heading, #contact {
-    width: 80%;
-    font-size: 12px;
-  }
-
-  #skills-imgs {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  img {
-    height: 150px;
-    width: auto;
-  }
-
-  #skill-item {
-    width: 80%;
-    padding: 20px;
-  }
-
-  #formname, #formmail, #formmessage {
-    width: 90%;
-    font-size: 12px;
-  }
-
-  #submit1 {
-    margin-left: 0;
-    font-size: 12px;
-  }
-
-  #sidemenu {
-    font-size: 30px;
-  }
-
-  #contact-info {
-    flex-direction: column;
-    width: 90%;
-    height: auto;
-  }
-
-  #or {
-    font-size: 30px;
-    margin-left: 40%;
-  }
-
-  footer {
-    margin-left: 10%;
-    font-size: 8px;
-  }
-
-  #vid1, #vid2, #spotify {
-    width: 90%;
-    margin-left: 5%;
-    padding: 10px;
-  }
-
-  #spotify-heading, #simon-heading {
-    margin-left: 10%;
-  }
-
-  #texts {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  main p, #simon-para, #folio-para, #spotifypara {
-    font-size: 13px;
-    line-height: 24px;
-  }
+/* Base font size adjustments */
+body {
+    font-size: 1rem; /* Set default base font size */
 }
 
-/* Extra small devices (phones in portrait, less than 480px) */
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-
-  #sidebar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #side-icon, #linkedin, #github {
-    width: 80px;
-    font-size: 24px;
-  }
-
-  #intro {
-    left: 10%;
-    width: 80%;
-    font-size: 12px;
-  }
-// responsive
-    
-  #start-intro, #second, #below {
-    left: 5%;
-    right: 5%;
-
-    
-transition: 0.3s all ease-in-out;
-transform: scale(1.1);
-box-shadow: 4px 4px 0 rgba(0,0,0);
+main p, #skill-item p {
+    font-size: 0.9rem;
 }
 
+#sidemenu {
+    font-size: 2rem;
+}
+
+#formname, #formmail, #formmessage {
+    font-size: 0.8rem;
+}
+
+/* Responsive scaling */
+@media (max-width: 1024px) {
+    #intro, #skills h1, #projects h1, #projects h2,
+    #spotify-heading, #simon-heading, #portfolio-heading, #Education-heading,
+    #contact {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #sidemenu {
+        font-size: 1.5rem;
+    }
+
+    #submit1 {
+        font-size: 0.9rem;
+    }
+
+    form {
+        margin-left: 10%;
+    }
+
+    #formname, #formmail, #formmessage {
+        width: 80%;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    #sidemenu {
+        font-size: 1.2rem;
+    }
+
+    #submit1 {
+        margin-left: 5%;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        margin-left: 5%;
+    }
+
+    #formname, #formmail, #formmessage {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+}
