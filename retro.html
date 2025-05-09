@@ -26,8 +26,8 @@
 <a href="#intro" id="about">About</a>
 <a href="#skills-line" id="skills1">Skills</a>
 <a href="#projects" id="projects1">Projects</a>
-<a href="#" id="education1">Education</a>
-<a href="#" id="contact1">Contact</a>
+<a href="#Education-heading" id="education1">Education</a>
+<a href="#contact" id="contact1">Contact</a>
 </div>
 
 
@@ -212,10 +212,11 @@ id="learn-more">Learn more...</a>
 
 <p id="or">OR</p>
 <p id="form-head"> FILL OUT THIS FORM</p>
-<form id="form-content">
- Name :<input type="text" placeholder="Enter your name" id="formname"><br>
- Email:<input type="text" placeholder="Email" id="formmail"><br>
-<span id="msg">Message:</span> <textarea placeholder="Your Message" id="formmessage"></textarea><br>
+<form id="form-content" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="ffc6a76e-6575-4025-91eb-7c1bac35cf62">
+ Name :<input type="text" name="name" placeholder="Enter your name" id="formname"><br>
+ Email:<input type="text" name="email" placeholder="Email" id="formmail"><br>
+<span id="msg">Message:</span> <textarea placeholder="Your Message" name="Message" id="formmessage"></textarea><br>
 
 <button type="submit" id="submit1">SUBMIT</button>
 </form>
@@ -223,11 +224,10 @@ id="learn-more">Learn more...</a>
 </main>
 <p id="footline">--------------------------------------------------------------------------</p>
 <footer>
-    <p id="about1">ABOUT: <i class="fa-brands fa-square-instagram" id="about"></i>
-        <i class="fa-brands fa-square-x-twitter" id="about"></i>
-        <i class="fa-brands fa-square-github" id="about"></i>
+    <p id="about1">ABOUT:<a href="https://www.instagram.com/sus_rishi?igsh=MXF1emxuaWd5aGlnNQ%3D%3D&utm_source=qr" id="ig-link"> <i class="fa-brands fa-square-instagram" id="about"></i></a>
+      <a href="https://x.com/sus_rishi?s=11" id="twitter-link"><i class="fa-brands fa-square-x-twitter" id="about"></i></a>
+      <a href="https://github.com/RISHIKARIR" id="github-link"><i class="fa-brands fa-square-github" id="about"></i></a>
     </p>
-
     <p>Developed & Designed by Parth</p>
     
 </footer>
