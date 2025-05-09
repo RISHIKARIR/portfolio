@@ -157,7 +157,8 @@ z-index: 0;
     right: 10%;
 
 }
-#below{position: absolute;
+#below{
+    position: absolute;
     top: 105%;
     left: 10%;
     right: 10%;
@@ -573,7 +574,8 @@ form{
     padding: 10px;
     margin-top: 10px;
     width: 50%;
-  
+    border-radius: 10px;
+    border: 2px solid #a020f0;
 }
 #formmessage{
     font-family: 'Press Start 2P';
@@ -581,7 +583,16 @@ form{
     margin-left: -10px;
     padding: 20px;
     width: 48%;
+    border-radius: 10px;
+    border: 2px solid #a020f0;
+   outline: none;
 }
+
+
+
+
+
+
 
 
 #msg{
@@ -620,8 +631,9 @@ footer{
 .fa-square-instagram{    
 
 color: #ffffff;
-background-color: #d62976 ;
-border-radius: 15px;
+background-color: #d62976;
+border-radius: 20%;
+
 
 }
 
@@ -632,7 +644,24 @@ border-radius: 15px;
     box-shadow: 4px 4px 0 rgba(150,47,191);
 }
 
+.fa-square-x-twitter{
+color: black;
+background-color: white;
+border-radius: 20%;
+}
+.fa-square-x-twitter:hover{
 
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 0 rgba(0,0,0);
+
+}
+
+#ig-link{
+    text-decoration: none;
+}
 
 
 
@@ -643,12 +672,36 @@ border-radius: 15px;
 
 
   #submit1{
+    cursor: pointer;
     color: #2f2f2f;
     font-family: 'Press Start 2P';
     font-size: 15px;
     border-radius: 5px;
     margin-top: 3%;
     margin-left: 10%;
+  }
+
+  #submit1:hover{
+    color:#2f2f2f;
+border-radius: 5px;
+transition: 0.3s all ease-in-out;
+transform: scale(1.1);
+box-shadow: 4px 4px 0 rgba(255,255,255,0.5);
 
   }
+
+.fa-square-github{
+    color: black;
+background-color: white;
+border-radius: 20%;
+} 
+
+
+.fa-square-github:hover{
+color: black;
+border-radius: 5px;
+transition: 0.3s all ease-in-out;
+transform: scale(1.1);
+box-shadow: 4px 4px 0 rgba(0,0,0);
+}
 
